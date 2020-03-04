@@ -33,4 +33,4 @@ CSS
 
 Agile 
 =====================
-[Agile и его методологии](./answers/agile.md)
+[Agile-семейство](./answers/agile.md)
