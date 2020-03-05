@@ -14,13 +14,15 @@
 
 ## Моки, стабы и шпионы
 
-* Mock - это заглушка для зависимости. С помощью моков можно заменить реальную зависимость на фиктивную (функцию, которая, например, не будет ничего делать). Или протестировать с меньшим интервалом через мок таймера. Пример в JEST:
+* Mock - это заглушка для зависимости. С помощью моков можно заменить реальную зависимость на фиктивную (функцию, которая, например, не будет ничего делать). Или протестировать с меньшим интервалом через мок таймера. Пример с компонентом React:
 ```
-jest.mock('axios');
-test('should fetch users', () => {
-  const res = {data: [{name: 'Bob'}]};
-  axios.get.mockResolvedValue(res);
-  return Users.all().then(users => expect(users).toEqual(res.data));
+  const mockinitializeAppTC = jest.fn(), // создание мока для функции 'mockinitializeAppTC'
+    props = { initializeAppTC: mockinitializeAppTC };
+
+  it("dispatches the 'initializeAppTC()' method it receives from props", () => {
+    const AppShallow = shallow(<App {...props} />);
+    expect(mockinitializeAppTC).toHaveBeenCalledTimes(1); // проверка, был ли вызов 1 раз
+  });
 });
 ```
 * Stub - это заглушка для данных, просто эмуляция результата/начальных данных.
