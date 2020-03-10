@@ -1,11 +1,13 @@
 Background
 =====================
 
-[Общие вопросы](./answers/all.md)
+[Basics](./answers/basics.md)
 
 [Структуры данных](./answers/dataStructure.md)
 
 [События и Event Loop](./answers/events.md)
+
+
 
 Network Interaction
 =====================
