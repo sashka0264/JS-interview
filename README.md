@@ -3,6 +3,8 @@ Background
 
 [Общие вопросы](./answers/all.md)
 
+[Структуры данных](./answers/dataStructure.md)
+
 [События и Event Loop](./answers/events.md)
 
 Network Interaction
@@ -16,7 +18,6 @@ Patterns / Principles
 [Основные принципы при разработке продукта](./answers/principles.md)
 
 [Основные паттерны проектирования под ООП и ФП, архитектуры](./answers/patterns.md)
-
 
 Testing
 =====================
