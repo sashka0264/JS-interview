@@ -78,7 +78,7 @@ typeof Function === "function";
 
 Object.__proto__ === Object.prototype; // false
 Object.__proto__ === Function.prototype; // true
-Function.__proto__ === Function.prototype;
+Function.__proto__ === Function.prototype; // true
 
 const o = {};
 o.__proto__ = {};
@@ -91,4 +91,48 @@ function f() {}
 f.__proto__ === Function.prototype;
 f.hasOwnProperty();
 f.__proto__.__proto__.hasOwnProperty();
+```
+<!-- Примеры -->
+```
+const x = () => greet;
+const greet = 'Hello';
+x(); // 'Hello'
+```
+
+## Унарные и бинарные операторы
+
+## Приведение типов
+* '===' - сравнение без приведения типов.
+* '==' - сравнение с приведением типов.
+* При сравнении, если одна из переменных не строка, то оба значения приводятся к числу, иначе сравнение будет в алфавитном порядке.
+
+## Всплытие переменных 
+```
+var a = 2;
+foo(); // foo 'всплывает'
+function foo() {
+	a = 3;
+	console.log(a);	// 3, потому что обьявление a всплывает внутри foo
+	var a;
+}
+console.log(a);	// 2
+```
+## Контекст вызова
+```
+function foo() {
+	console.log(this.bar);
+}
+var bar = "global",
+  obj1 = {
+    bar: "obj1",
+    foo: foo
+  },
+  obj2 = {
+	  bar: "obj2"
+  };
+
+foo(); // "global"
+obj1.foo();	// "obj1"
+foo.call( obj2 ); // "obj2"
+new foo(); /* undefined, потому что new foo() устанавливает this на абсолютно новый пустой объект и возвращает его, а ключа bar в нем не существует */
 ```
