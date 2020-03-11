@@ -1,8 +1,8 @@
-[var vs let/const](./basics/let_and_const.md)
+[Разница между var и let/const](./basics/let_and_const.md)
 
-[() => {} vs function() {}](./basics/arrow_functions_and_ordinary.md)
+[Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
-[ООП и ФП](./basics/oop_or_fp.md)
+[Разница между ООП и ФП](./basics/oop_or_fp.md)
 
 [Область видимости](./basics/viewable_area.md)
 
@@ -18,6 +18,6 @@
 
 [Контекст вызова](./basics/this.md)
 
-[Императивное/деклоративное программирование](./basics/imperative_declarative_programming.md)
-
 [Критический путь рендеринга](./basics/critical_rendering_path.md)
+
+[Императивное/деклоративное программирование](./basics/imperative_declarative_programming.md)
