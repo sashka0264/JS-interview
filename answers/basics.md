@@ -122,11 +122,11 @@ function foo() {
 }
 var bar = "global";
 var obj1 = {
-  bar: "obj1",
-  foo: foo
+  	bar: "obj1",
+  	foo: foo
 };
 var obj2 = {
-	bar: "obj2"
+		bar: "obj2"
 };
 foo(); // "global"
 obj1.foo();	// "obj1"
