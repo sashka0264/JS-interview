@@ -1,21 +1,21 @@
 [Различия ООП и ФП](./basics/oop_or_fp.md)
+
 [Область видимости](./basics/viewable_area.md)
+
 [Замыкания](./basics/circuit.md)
+
 [Императивное/деклоративное программирование](./basics/imperative_declarative_programming.md)
+
 [Прототипное наследование](./basics/prototype_inheritance.md)
+
 [Стрелочные функции и обычные](./basics/arrow_functions_and_ordinary.md)
+
 [Отличие let от const](./basics/let_and_const.md)
+
 [Критический путь рендеринга](./basics/critical_rendering_path.md)
+
 [Promise](./basics/promise.md)
 
-
-
-### Пример
-```js
-const x = () => greet;
-const greet = 'Hello';
-x(); // 'Hello'
-```
 
 ### Унарные и бинарные операторы
 
