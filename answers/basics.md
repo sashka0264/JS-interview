@@ -21,3 +21,27 @@
 [Критический путь рендеринга](./basics/critical_rendering_path.md)
 
 [Императивное/деклоративное программирование](./basics/imperative_declarative_programming.md)
+
+### Автобоксинг
+Автобоксинг - это механизм, который не позволяет работать с примитивами как с обьектами, но при этом, сохраняет возможность получать методы и свойства (как будто это обьект). Например, для строки создается временная обертка String, у которой есть нужные нам методы, а на выходе нам снова вернется примитив.
+
+### React 
+#### Монтирование
+```js
+constructor()
+static getDerivedStateFromProps(props, state) // static, то есть не как prototype для функции, а как свойство обьекта
+render() 
+componentDidMount() // для создания сетевых запросов
+```
+#### Обновление
+```js
+static getDerivedStateFromProps()
+shouldComponentUpdate(nextProps, nextState) // false, если перерисовка не нужна
+render()
+getSnapshotBeforeUpdate(prevProps, prevState) // если прокрутка нужна, то делаем return, иначе null
+componentDidUpdate(prevProps, prevState, snapshot) 
+```
+#### Размонтирование 
+```js
+componentWillUnmount()
+```
