@@ -73,7 +73,7 @@ const newCat = new CatBuilder()
   .build();
 console.log(newCat);
 ```
-* Module - сокрытие данных с помощью новой области видимости
+* Module - сокрытие данных с помощью новой области видимости (тут может быть не только IIFE)
 ```
 const module = (() => {
   let number = 0;
