@@ -12,7 +12,7 @@
 
 [Промисы](./basics/promise.md)
 
-[Приведение типов](./basics/cast_of_types.md)
+[Приведение типов/Присваивание](./basics/cast_of_types.md)
 
 [Всплытие переменных](./basics/hosting.md)
 
