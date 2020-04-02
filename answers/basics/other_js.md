@@ -56,3 +56,20 @@ length // количество элементов в хранилище.
 
 Куки при каждом запросе отправляются на сервер
 ```
+
+#### Функция-генератор 
+Генератор - это функция, которая может выполняться частично и возвращать промеждуточные значения.
+```js
+function *gen() {
+  // do something...
+  yield 1;
+  // do something...
+  yield 2;
+};
+
+const iterator = gen();
+
+iterator.next(); // {value: 1, done: false}
+iterator.next(); // {value: 2, done: false}
+iterator.next(); // {value: undefined, done: true}
+```
