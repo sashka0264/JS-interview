@@ -1,20 +1,38 @@
+Промис - обьект, имеющий значение и 3 состояния: ожидание, успешное и неудачное выполнение. Все методы промиса возвращают промис. Если внутри then - некорректное выражение (вроде самовызывающейся функции), то этот then "пропускается", будто его нет.
 ```js
-typeof Object === "function";
-typeof Function === "function";
+Promise.resolve(5)
+  .then(res => {
+      console.log(res); // 5
+    })
+  .then(res => {
+      console.log(res); // undefined
+      return 2;
+    })
+  .then(res => {
+    console.log(res);
+    return 4; // 2
+  });
+```
 
-Object.__proto__ === Object.prototype; // false
-Object.__proto__ === Function.prototype; // true
-Function.__proto__ === Function.prototype; // true
+```js
+Promise.resolve(55)
+  .then(function (val) {
+    console.log(val);
+    throw new Error();
+  })
+  .then((val) => console.log('then', val))
+  .catch((val) => {
+    console.log('catch', val);
+    return Promise().reject();
+  })
+  .then(finalHandler, finalHandler1)
+  .then(finalHandler, finalHandler1)
+  .then(finalHandler, finalHandler1);
 
-const o = {};
-o.__proto__ = {};
-o.__proto__.hasOwnProperty = null;
-
-const p = {};
-p.hasOwnProperty();
-
-function f() {}
-f.__proto__ === Function.prototype;
-f.hasOwnProperty();
-f.__proto__.__proto__.hasOwnProperty();
+function finalHandler() {
+  console.log('finalHandler')
+}
+function finalHandler1() {
+  console.log('finalHandler1')
+}
 ```
