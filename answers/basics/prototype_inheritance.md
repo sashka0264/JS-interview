@@ -1,7 +1,43 @@
 * Каждый обьект в JS имеет скрытую ссылку на null или на другой обьект, который будет его прототипом.
 * Для доступа к прототипу мы можем использовать ссылку __proto__.
 * Если мы хотим вызвать метод obj, то поиск будет сначала в obj, а потом в его прототипах.
-* Prototype - это обьект, имеющий единственное свойство constructor, ссылающийся на саму функцию. Есть только у функций (не стрелочных). У prototype свойство конструктор - не единственное, если есть методы в классе вне конструктора, они тоже будут.
+
+## Про обьект prototype
+Обьект prototype есть только у нестрелочных функций. В нем все методы данной функции (в том числе constructor).
+Обычно __proto__ ссылается на prototype той функции, с помощью которой был создан данный обьект
+```js
+function Example (name) {
+  this.name = name;
+}
+
+Example.prototype.method = function() {}
+```
+
+```js
+class Example {
+  constructor(name) {
+    this.name = name;
+  }
+
+  example() {}
+}
+```
+
+```js
+typeof Object === "function";
+typeof Function === "function";
+
+String.__proto__ === Function.prototype; // true
+Number.__proto__ === Function.prototype; // true
+BigInt.__proto__ === Function.prototype; // true
+Boolean.__proto__ === Function.prototype; // true
+Symbol.__proto__ === Function.prototype; // true
+Object.__proto__ === Function.prototype; // true
+Function.__proto__ === Function.prototype; // true
+
+Object.__proto__ === Object.prototype; // false
+
+
 * Цикл for..in пробегается также по унаследованным свойствам. Решается эта проблема так:
 ```js
 var buz = {
@@ -16,14 +52,6 @@ for (var name in buz) {
   }
 }
 ```
-
-```js
-typeof Object === "function";
-typeof Function === "function";
-
-Object.__proto__ === Object.prototype; // false
-Object.__proto__ === Function.prototype; // true
-Function.__proto__ === Function.prototype; // true
 
 const o = {};
 o.__proto__ = {};
