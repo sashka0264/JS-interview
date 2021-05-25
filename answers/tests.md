@@ -31,6 +31,7 @@
 Создается фиктивная функция, которая отслеживает вызовы целевой.
 
 ## Jest
+* mockImplementation
 ```
 const func = jest.fn();
 func.mockImplementation(x => x + 1);
