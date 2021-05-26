@@ -37,5 +37,8 @@ import React, { useState } from 'react';
 jest.mock('react', () => ({ ...jest.requireActual('react'), useState: jest.fn() }));
 jest.mock('@sber/Component', () => ({ children }) => <div>{children}</div>);
 ```
-* jext.fn().mockImplementation - функция, позволяющая задать тело для мок-фукции (передается первым параметром), которое будет срабатывать при вызове.
-* jest.fn().mockReturnValue - функция, позволяющая передать первым параметром нужный нам ответ после вызова мок-фукции.
+* Полезные матчеры.
+```
+expect(['lime', 10]).toContain('lime');
+```
+* Для нескольких кейсов - beforeEach, beforeAll, afterEach, afterAll.
