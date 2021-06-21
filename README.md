@@ -24,7 +24,7 @@ Patterns / Principles
 Testing
 =====================
 
-[Основная теория, про СI/CD](./answers/tests.md)
+[Основная теория](./answers/tests.md)
 
 Git
 =====================
