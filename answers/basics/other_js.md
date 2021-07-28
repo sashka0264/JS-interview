@@ -91,3 +91,14 @@ this.name = 'Nadia';
 console.log(this.name); // Alex.
 ```
 В более новой версии языка появился знак #. Мы не можем получить к ```this.#name``` доступ извне или из наследуемых классов.
+```js
+class Name {
+  this.#name = 'Alex';
+  get name() {
+    return this.#name;
+  }
+}
+const x = new Name();
+console.log(x.#name); // Error.
+console.log(x.name); // Alex.
+```
