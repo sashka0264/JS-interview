@@ -76,3 +76,15 @@ iterator.next(); // {value: undefined, done: true}
 
 #### Приватность
 Нижнее подчеркивание - условно приватное свойство обьекта, которое менять напрямую является плохим тоном. Делается это с целью получить контролируемый доступ к этом свойству.
+```js
+this._name = 'Alex';
+...
+this._name = 'Nadia';
+console.log(); // Nadia.
+
+get name() {
+  return this._name;
+}
+this.name = 'Nadia';
+console.log(this.name); // Alex.
+```
