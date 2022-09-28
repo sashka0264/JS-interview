@@ -1,4 +1,4 @@
-Background
+JavaScript
 =====================
 
 [Basics](./answers/basics.md)
