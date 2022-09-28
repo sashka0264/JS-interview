@@ -9,7 +9,7 @@ Background
 
 [Основные нововведения](./answers/feature.md)
 
-Network Interaction
+Интернет
 =====================
 
 [Про сетевое взаимодействие, REST](./answers/network.md)
