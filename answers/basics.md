@@ -1,4 +1,4 @@
-[Разница между var и let/const](./basics/let_and_const.md)
+❗️[Разница между var и let/const](./basics/let_and_const.md)
 
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
