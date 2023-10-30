@@ -6,8 +6,6 @@
 
 ❗️[Замыкания и область видимости](./basics/circuit.md)
 
-[Область видимости](./basics/viewable_area.md)
-
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
 [Разница между ООП и ФП](./basics/oop_or_fp.md)
