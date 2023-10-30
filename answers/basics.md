@@ -1,6 +1,6 @@
 ❗️✅ [Разница между var и let/const](./basics/let_and_const.md)
 
-❗️[Контекст вызова](./basics/this.md)
+❗️[Контекст исполнения](./basics/this.md)
 
 ❗️[HTTP](./basics/http_methods.md)
 
