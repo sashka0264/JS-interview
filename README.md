@@ -1,11 +1,11 @@
 Верстка 
 =====================
-[Flexbox](./answers/flexbox.md)
+❗️ [Flexbox](./answers/flexbox.md)
 
 JavaScript
 =====================
 
-[Basics](./answers/basics.md)
+❗️ [Basics](./answers/basics.md)
 
 [Структуры данных](./answers/dataStructure.md)
 
