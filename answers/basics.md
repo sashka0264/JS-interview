@@ -2,6 +2,8 @@
 
 ❗️[Замыкания](./basics/circuit.md)
 
+❗️[Контекст вызова](./basics/this.md)
+
 [Область видимости](./basics/viewable_area.md)
 
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
@@ -15,8 +17,6 @@
 [Приведение типов/Присваивание](./basics/cast_of_types.md)
 
 [Всплытие переменных](./basics/hosting.md)
-
-[Контекст вызова](./basics/this.md)
 
 [Критический путь рендеринга](./basics/critical_rendering_path.md)
 
