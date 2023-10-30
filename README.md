@@ -1,6 +1,6 @@
 Верстка 
 =====================
-❗️ [Flexbox](./answers/flexbox.md)
+❗️ [CSS](./answers/flexbox.md)
 
 JavaScript
 =====================
