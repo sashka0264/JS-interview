@@ -10,11 +10,11 @@
 
 ❗️ [React/Redux](./basics/react_redux.md)
 
+? [Прототипное наследование](./basics/prototype_inheritance.md)
+
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
 [Разница между ООП и ФП](./basics/oop_or_fp.md)
-
-[Прототипное наследование](./basics/prototype_inheritance.md)
 
 [Приведение типов/Присваивание](./basics/cast_of_types.md)
 
