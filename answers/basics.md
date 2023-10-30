@@ -2,6 +2,8 @@
 
 ❗️[Контекст вызова](./basics/this.md)
 
+❗️[HTTP](./basics/http_methods.md)
+
 [Замыкания](./basics/circuit.md)
 
 [Область видимости](./basics/viewable_area.md)
