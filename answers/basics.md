@@ -8,6 +8,8 @@
 
 ❗️ [HTTP](./basics/http_methods.md)
 
+❗️ [React/Redux](./basics/react_redux.md)
+
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
 [Разница между ООП и ФП](./basics/oop_or_fp.md)
