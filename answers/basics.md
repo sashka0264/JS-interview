@@ -1,12 +1,12 @@
 ❗️[Разница между var и let/const](./basics/let_and_const.md)
 
+❗️[Замыкания](./basics/circuit.md)
+
 [Область видимости](./basics/viewable_area.md)
 
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
 [Разница между ООП и ФП](./basics/oop_or_fp.md)
-
-[Замыкания](./basics/circuit.md)
 
 [Прототипное наследование](./basics/prototype_inheritance.md)
 
