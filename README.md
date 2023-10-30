@@ -1,3 +1,7 @@
+Верстка 
+=====================
+[Flexbox](./answers/flexbox.md)
+
 JavaScript
 =====================
 
@@ -29,10 +33,6 @@ Patterns / Principles
 Git
 =====================
 [Основные git-команды, как работать](./answers/git.md)
-
-Верстка 
-=====================
-[Flexbox](./answers/flexbox.md)
 
 Agile 
 =====================
