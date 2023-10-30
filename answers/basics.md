@@ -1,8 +1,8 @@
 ❗️[Разница между var и let/const](./basics/let_and_const.md)
 
-❗️[Замыкания](./basics/circuit.md)
-
 ❗️[Контекст вызова](./basics/this.md)
+
+❗️[Замыкания](./basics/circuit.md)
 
 [Область видимости](./basics/viewable_area.md)
 
