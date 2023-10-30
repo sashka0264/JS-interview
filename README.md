@@ -1,11 +1,11 @@
 Верстка 
 =====================
-❗️ [CSS](./answers/flexbox.md)
+❗️ [Основные вопросы](./answers/flexbox.md)
 
 JavaScript
 =====================
 
-❗️ [Basics](./answers/basics.md)
+❗️ [Основные вопросы](./answers/basics.md)
 
 [Структуры данных](./answers/dataStructure.md)
 
