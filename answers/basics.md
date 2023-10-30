@@ -1,4 +1,4 @@
-❗️✅[Разница между var и let/const](./basics/let_and_const.md)
+❗️✅ [Разница между var и let/const](./basics/let_and_const.md)
 
 ❗️[Контекст вызова](./basics/this.md)
 
