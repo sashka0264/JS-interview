@@ -1,18 +1,18 @@
 ❗️✅ [Разница между var и let/const](./basics/let_and_const.md)
 
-❗️[Контекст исполнения](./basics/this.md)
+❗️ [Замыкания и область видимости](./basics/circuit.md)
 
-❗️[HTTP](./basics/http_methods.md)
+❗️ [Контекст исполнения](./basics/this.md)
 
-❗️[Замыкания и область видимости](./basics/circuit.md)
+❗️ [Асинхронность](./basics/promise.md)
+
+❗️ [HTTP](./basics/http_methods.md)
 
 [Разница между стрелочной и обычной функциями](./basics/arrow_functions_and_ordinary.md)
 
 [Разница между ООП и ФП](./basics/oop_or_fp.md)
 
 [Прототипное наследование](./basics/prototype_inheritance.md)
-
-[Промисы](./basics/promise.md)
 
 [Приведение типов/Присваивание](./basics/cast_of_types.md)
 
