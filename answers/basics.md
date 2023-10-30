@@ -18,8 +18,6 @@
 
 [Приведение типов/Присваивание](./basics/cast_of_types.md)
 
-[Всплытие переменных](./basics/hosting.md)
-
 [Критический путь рендеринга](./basics/critical_rendering_path.md)
 
 [Императивное/деклоративное программирование](./basics/imperative_declarative_programming.md)
