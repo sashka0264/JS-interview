@@ -25,22 +25,6 @@
 [Другое о JS](./basics/other_js.md)
 
 ### React 
-#### Монтирование
-```js
-constructor()
-static getDerivedStateFromProps(props, state) // static, то есть не как prototype для функции, а как свойство обьекта
-render() 
-componentDidMount() // для создания сетевых запросов
-```
-#### Обновление
-```js
-static getDerivedStateFromProps()
-shouldComponentUpdate(nextProps, nextState) // false, если перерисовка не нужна
-render()
-getSnapshotBeforeUpdate(prevProps, prevState) // если прокрутка нужна, то делаем return, иначе null
-componentDidUpdate(prevProps, prevState, snapshot) 
-```
-#### Размонтирование 
-```js
-componentWillUnmount()
-```
+#### useCallback
+
+Мемоизирует функцию, которая будет вызываться при каком-то действии в дальнейшем. Если в компоненте постоянно меняется состояние или пропсы, то такой коллбэк каждый раз будет уникальным. А useCallback позволяет нам закэшировать его и передавать детям, что позволяет нам оптимизировать лишние рендеры, вызванные уникальностью коллбэка.
